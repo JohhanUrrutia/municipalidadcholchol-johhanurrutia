@@ -1,0 +1,181 @@
+.menu {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+}
+
+.barraArriba {
+  background-color: #315aa8;
+  color: #ffffff;
+}
+
+.barraAbajo {
+  background-color: #28488a;
+  color: #ffffff;
+  border-top: 0.0625rem solid #ffffff22;
+}
+
+.contenedorMenu {
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 4.375rem;
+  position: relative;
+}
+
+.marcaMenu {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logoMenu {
+  height: 3.125rem;
+  width: auto;
+  display: block;
+}
+
+.navegacion {
+  display: flex;
+  align-items: center;
+}
+
+.linksArriba,
+.linksAbajo,
+.linksAbajoMovil {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1.75rem;
+}
+
+.linksArriba a,
+.linksAbajo a,
+.linksAbajoMovil a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.9375rem;
+  padding: 0.5rem 0;
+  display: inline-block;
+}
+
+.linksAbajoMovil {
+  display: none;
+}
+
+.barraAbajo .contenedorMenu {
+  min-height: 2.75rem;
+  justify-content: flex-end;
+}
+
+.linksAbajo a {
+  font-size: 0.8125rem;
+}
+
+.botonHamburguesa {
+  display: none;
+  width: 2.625rem;
+  height: 2.625rem;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  padding: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3125rem;
+}
+
+.botonHamburguesa span {
+  display: block;
+  width: 1.625rem;
+  height: 0.1875rem;
+  background-color: #ffffff;
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+.botonHamburguesa.abierto span:nth-child(1) {
+  transform: translateY(0.5rem) rotate(45deg);
+}
+
+.botonHamburguesa.abierto span:nth-child(2) {
+  opacity: 0;
+}
+
+.botonHamburguesa.abierto span:nth-child(3) {
+  transform: translateY(-0.5rem) rotate(-45deg);
+}
+
+@media (max-width: 56.25rem) {
+  .botonHamburguesa {
+    display: flex;
+  }
+
+  .navegacion {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #315aa8;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+
+  .navegacion.abierto {
+    max-height: 37.5rem;
+  }
+
+  .linksArriba,
+  .linksAbajoMovil {
+    flex-direction: column;
+    gap: 0;
+    padding: 0.5rem 1.25rem;
+  }
+
+  .linksArriba li,
+  .linksAbajoMovil li {
+    border-bottom: 0.0625rem solid #ffffff22;
+  }
+
+  .linksArriba li:last-child,
+  .linksAbajoMovil li:last-child {
+    border-bottom: 0;
+  }
+
+  .linksArriba a,
+  .linksAbajoMovil a {
+    display: block;
+    padding: 0.875rem 0;
+    width: 100%;
+  }
+
+  .linksAbajoMovil {
+    display: flex;
+    background-color: #28488a;
+  }
+
+  .barraAbajo {
+    display: none;
+  }
+}
+
+@media (max-width: 30rem) {
+  .contenedorMenu {
+    padding: 0 1rem;
+    min-height: 4rem;
+  }
+
+  .logoMenu {
+    height: 2.625rem;
+  }
+}

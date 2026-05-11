@@ -1,0 +1,107 @@
+.seccionTransito {
+  background-color: #f4f6fb;
+  padding: 4rem 1.25rem;
+}
+
+
+
+.contenedorTransito {
+  max-width: 75rem;
+  margin: 0 auto;
+}
+
+
+
+.trafficTitle {
+  text-align: center;
+  font-size: 2rem;
+  color: #315aa8;
+  margin: 0 0 0.5rem;
+  font-weight: 700;
+}
+
+.textoDireccion {
+  text-align: center;
+  color: #374151;
+  margin: 0 0 2rem;
+  font-size: 1rem;
+}
+
+
+
+.cajaTransito {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  align-items: stretch;
+}
+
+
+
+.leftSide,
+.rightSide {
+  overflow: hidden;
+  background-color: #ffffff;
+  height: 23.75rem;
+  display: flex;
+}
+
+
+
+.fotoTransito {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+
+
+.mapaTransito {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
+
+
+
+@media (max-width: 56.25rem) {
+
+  .trafficTitle {
+    font-size: 1.625rem;
+  }
+
+
+  .cajaTransito {
+    grid-template-columns: 1fr;
+  }
+
+
+  .leftSide,
+  .rightSide {
+    height: 18.75rem;
+  }
+
+}
+
+
+
+@media (max-width: 37.5rem) {
+
+  .seccionTransito {
+    padding: 3rem 1rem;
+  }
+
+
+  .trafficTitle {
+    font-size: 1.375rem;
+  }
+
+
+  .leftSide,
+  .rightSide {
+    height: 15rem;
+  }
+
+}

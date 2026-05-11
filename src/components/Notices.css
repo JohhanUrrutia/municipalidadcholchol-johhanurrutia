@@ -1,0 +1,166 @@
+.noticesSection {
+
+  background-color: #f4f6fb;
+
+  padding: 3.5rem 1.25rem;
+
+}
+
+
+
+.contenedorAvisos {
+
+  max-width: 75rem;
+
+  margin: 0 auto;
+
+}
+
+
+
+.noticesTitle {
+
+  text-align: center;
+
+  font-size: 2rem;
+
+  color: #315aa8;
+
+  margin: 0 0 2rem;
+
+  font-weight: 700;
+
+}
+
+
+
+.gridAvisos {
+
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(13.75rem, 1fr));
+
+  gap: 1.5rem;
+
+}
+
+
+
+.noticeCard {
+
+  background-color: #ffffff;
+
+  display: flex;
+
+  flex-direction: column;
+
+  border: 0.0625rem solid #e0e6f1;
+
+}
+
+
+
+.cajaImagenAviso {
+
+  width: 100%;
+
+  height: 17.5rem;
+
+  overflow: hidden;
+
+  background-color: #e9eef7;
+
+}
+
+
+
+.imagenAviso {
+
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: cover;
+
+  display: block;
+
+}
+
+
+
+.noticeButton {
+
+  display: block;
+
+  text-align: center;
+
+  background-color: #315aa8;
+
+  color: #ffffff;
+
+  text-decoration: none;
+
+  padding: 0.875rem 1rem;
+
+  font-weight: 600;
+
+  font-size: 0.9375rem;
+
+}
+
+
+
+@media (max-width: 56.25rem) {
+
+  .noticesTitle {
+    font-size: 1.625rem;
+  }
+
+
+  .cajaImagenAviso {
+    height: 15rem;
+  }
+
+}
+
+
+
+@media (max-width: 37.5rem) {
+
+  .noticesSection {
+    padding: 2.5rem 1rem;
+  }
+
+
+  .noticesTitle {
+    font-size: 1.375rem;
+    margin-bottom: 1.5rem;
+  }
+
+
+  .gridAvisos {
+    grid-template-columns: repeat(auto-fit, minmax(9.375rem, 1fr));
+    gap: 1rem;
+  }
+
+
+  .cajaImagenAviso {
+    height: 12.5rem;
+  }
+
+}
+
+
+
+@media (max-width: 23.75rem) {
+
+  .gridAvisos {
+    grid-template-columns: 1fr;
+  }
+
+
+  .cajaImagenAviso {
+    height: 15rem;
+  }
+
+}

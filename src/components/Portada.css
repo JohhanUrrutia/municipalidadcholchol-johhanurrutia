@@ -1,0 +1,84 @@
+.portada {
+  position: relative;
+  width: 100%;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('/imgs/background-header.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #ffffff;
+  overflow: hidden;
+}
+
+.capaOscura {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #1a3266aa;
+  z-index: 1;
+}
+
+.contenidoPortada {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 2rem 1.25rem;
+  max-width: 56.25rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.75rem;
+}
+
+.tituloPortada {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.15;
+  margin: 0;
+}
+
+.botonPagar {
+  display: inline-block;
+  background-color: #ffffff;
+  color: #315aa8;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 0.875rem 2rem;
+  font-size: 1rem;
+  letter-spacing: 0.02rem;
+  word-break: break-word;
+  max-width: 100%;
+}
+
+@media (max-width: 56.25rem) {
+  .tituloPortada {
+    font-size: 2.25rem;
+  }
+}
+
+@media (max-width: 37.5rem) {
+  .portada {
+    min-height: 55vh;
+  }
+
+  .tituloPortada {
+    font-size: 1.75rem;
+  }
+
+  .botonPagar {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9375rem;
+  }
+}
+
+@media (max-width: 23.75rem) {
+  .tituloPortada {
+    font-size: 1.5rem;
+  }
+}

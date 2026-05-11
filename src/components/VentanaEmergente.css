@@ -1,0 +1,64 @@
+.overlayVentana {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #00000099;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.25rem;
+}
+
+.cajaVentana {
+  background-color: #ffffff;
+  max-width: 28rem;
+  width: 100%;
+  padding: 2rem 1.75rem 1.75rem;
+  position: relative;
+  border-top: 0.375rem solid #315aa8;
+}
+
+.botonCerrar {
+  position: absolute;
+  top: 0.375rem;
+  right: 0.625rem;
+  background-color: transparent;
+  border: 0;
+  font-size: 1.75rem;
+  line-height: 1;
+  color: #315aa8;
+  cursor: pointer;
+  font-family: inherit;
+  padding: 0.25rem 0.5rem;
+}
+
+.tituloVentana {
+  margin: 0 0 0.75rem;
+  color: #315aa8;
+  font-size: 1.375rem;
+  font-weight: 700;
+}
+
+.textoVentana {
+  margin: 0;
+  color: #374151;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 37.5rem) {
+  .cajaVentana {
+    padding: 1.75rem 1.25rem 1.25rem;
+  }
+
+  .tituloVentana {
+    font-size: 1.25rem;
+  }
+
+  .textoVentana {
+    font-size: 0.9375rem;
+  }
+}
